@@ -1,0 +1,100 @@
+body {
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 50vh;
+  flex-wrap: wrap;
+}
+
+.dotbox {
+  width: 100px;
+  height: 25vh;
+  animation: rotateDots 2s ease infinite;
+}
+
+.boxBox {
+  width: 100px;
+  height: 25vh;
+}
+
+.dot {
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.first-box {
+  background-color: white;
+  width: 10px;
+  height: 50px;
+  margin: 3px;
+  animation: scaleBox 1s ease infinite;
+  animation-delay: 0s 1000ms;
+}
+.second-box {
+  background-color: white;
+  width: 10px;
+  height: 50px;
+  margin: 3px;
+  animation: scaleBox 1s ease infinite;
+  animation-delay: 0.1s 1000ms;
+}
+.third-box {
+  background-color: white;
+  width: 10px;
+  height: 50px;
+  margin: 3px;
+  animation: scaleBox 1s ease infinite;
+  animation-delay: 0.2s 1000ms;
+}
+.fourth-box {
+  background-color: white;
+  width: 10px;
+  height: 50px;
+  margin: 3px;
+  animation: scaleBox 1s ease infinite;
+  animation-delay: 0.3s 1000ms;
+}
+.fifth-box {
+  background-color: white;
+  width: 10px;
+  height: 50px;
+  margin: 3px;
+  animation: scaleBox 1s ease infinite;
+  animation-delay: 0.4s 1000ms;
+}
+
+@keyframes rotateDots {
+  0% {
+    transform: rotateZ(0);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes scaleBox {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scaleY(2);
+  }
+  100% {
+    transform: none;
+  }
+}
