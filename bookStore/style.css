@@ -61,6 +61,11 @@ body {
   color: rgba(0, 0, 0, 0.1);
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
 .library-header {
   margin: 90px 0px;
   display: flex;
@@ -101,10 +106,123 @@ body {
 }
 
 .day__genre_biography {
-  box-sizing: content-box;
-  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
 }
 
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #ececec;
+  margin-right: 10px;
+}
+
+.bookmark_booknow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+}
+
+.bookmark {
+  background-color: orange;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booktag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  width: 130px;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
+.top-adventure {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 35px;
+}
+
+.adventure-scroll {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+}
+
+.adventure-scroll::-webkit-scrollbar {
+  height: 15px;
+}
+.adventure-scroll::-webkit-scrollbar-thumb {
+  background-color: var(--point-color);
+  background-clip: padding-box;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+.adventure-scroll::-webkit-scrollbar-track {
+  background-color: var(--main-color);
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+.book {
+  width: 90px;
+  margin-right: 40px;
+}
+
+.book > img {
+  width: 90px;
+  height: 160px;
+  border-radius: 10px;
+}
+
+.author-section {
+  display: flex;
+}
+
+.author-imgbox {
+  width: 130px;
+  height: 190px;
+  border-radius: 10px;
+  padding: 0px 35px;
+}
+
+.author-imgbox > img {
+  width: 130px;
+  height: 190px;
+  margin-right: 40px;
+  border-radius: 40px;
+}
+
+.author-section2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-header {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.author-text {
+  margin-top: 20px;
+  letter-spacing: 2px;
+  text-align: left;
+  opacity: 0.3;
+  font-size: 13px;
+}
 /******************** star-rating *********************/
 .unable_star-rating {
   display: flex;
@@ -130,5 +248,26 @@ body {
   position: relative;
   width: 0.7em;
   font-size: 30px;
+}
+
+.star-rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+
+  display: flex;
+
+  justify-content: flex-end;
+}
+.star-rating > span {
+  display: inline-block;
+  position: relative;
+  width: 0.7em;
+  font-size: 30px;
+}
+.star-rating > span:hover:before,
+.star-rating > span:hover ~ span:before {
+  content: "\2605";
+  position: absolute;
+  color: orange;
 }
 /*****************************************************/
