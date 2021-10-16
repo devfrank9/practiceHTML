@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="music-player-screen">
+      <div class="music-player-header">
+        <div class="music-player-header__column">
+          <i class="fas fa-arrow-left"></i>
+        </div>
+        <div class="music-player-header__column">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+      <div class="singer-profile">
+        <div class="singer-profile__img">
+          <img
+            src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA5MjFfMjAz%2FMDAxNjMyMTczNzcwMjQ3.KdYeSvB_cFa9xL8IL_ILgyuhfNA19rx_5RoOTL6lRwUg.fHxyj_GNO9-YLWe2FCcGr3peg1YxQaZ98m08y57pZjgg.JPEG.racheladams%2FIMG_9436.JPG&type=sc960_832"
+          />
+        </div>
+        <h1 class="singer-profile__name">Mujin Lee</h1>
+        <span class="singer-profile__genre">R&B, Indie</span>
+      </div>
+      <div class="btn">
+        <div class="btn__shuffle">Shuffle</div>
+        <div class="btn__heart">
+          <i class="fas fa-heart"> </i>
+          <p>212971</p>
+        </div>
+      </div>
+      <div class="playlist">
+        <div class="playlist-music">
+          <div class="playlist-music__img">
+            <img
+              src="https://musicmeta-phinf.pstatic.net/album/006/197/6197877.jpg?type=r360Fll&v=20210913233037"
+            />
+          </div>
+          <div class="playlist-music__songtitle">
+            <span>이무진</span>
+            <h1>과제곡</h1>
+          </div>
+          <div class="playlist-music__songinfo">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+        <div class="playlist-music">
+          <div class="playlist-music__img">
+            <i class="fas fa-play"></i>
+            <img
+              src="https://musicmeta-phinf.pstatic.net/album/006/387/6387467.jpg?type=r360Fll&v=20210901101108"
+            />
+          </div>
+          <div class="playlist-music__songtitle">
+            <span>이무진</span>
+            <h1>담아갈게</h1>
+          </div>
+          <div class="playlist-music__songinfo">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+        <div class="playlist-music">
+          <div class="playlist-music__img">
+            <img
+              src="https://musicmeta-phinf.pstatic.net/album/006/407/6407552.jpg?type=r360Fll&v=20210914175912"
+            />
+          </div>
+          <div class="playlist-music__songtitle">
+            <span>이무진</span>
+            <h1>가을타나봐</h1>
+          </div>
+          <div class="playlist-music__songinfo">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+        <div class="playlist-music">
+          <div class="playlist-music__img">
+            <img
+              src="https://musicmeta-phinf.pstatic.net/album/006/028/6028689.jpg?type=r480Fll&v=20210618141204"
+            />
+          </div>
+          <div class="playlist-music__songtitle">
+            <span>이무진</span>
+            <h1>비와당신</h1>
+          </div>
+          <div class="playlist-music__songinfo">
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+      </div>
+      <div class="now-playing">
+        <div class="now-playing__collumn1">
+          <div class="now-playing__collumn1__title">
+            <span>이무진</span>
+            <p>담아갈게</p>
+          </div>
+        </div>
+        <div class="now-playing__collumn2">
+          <div class="now-playing__collumn2__btn">
+            <i class="fas fa-step-backward"></i>
+            <i class="fas fa-play"></i>
+            <i class="fas fa-step-forward"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="music-player-screen">
+      <div class="music-player-header">
+        <div class="music-player-header__column">
+          <i class="fas fa-arrow-left"></i>
+        </div>
+        <div class="music-player-header__column">
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+      </div>
+      <div class="music-player-screen_playing">
+        <div class="music-player-screen_playing__album-img">
+          <img
+            src="https://musicmeta-phinf.pstatic.net/album/006/387/6387467.jpg?type=r480Fll&v=20210901101108"
+          />
+        </div>
+        <div class="music-player-screen_playing__title">
+          <span>담아갈게</span>
+          <p>이무진</p>
+        </div>
+        <div class="playing-time">
+          <div class="playing-time__collumn">
+            <div class="playing-time__time1">
+              <p>0:00</p>
+            </div>
+            <div class="playing-time__time2">
+              <p>2:21</p>
+            </div>
+          </div>
+          <div class="playing-time__range">
+            <input type="range" />
+          </div>
+        </div>
+        <div class="music-player-control">
+          <i class="fas fa-redo"></i>
+          <i class="fas fa-backward"></i>
+          <i class="fas fa-play-circle"></i>
+          <i class="fas fa-forward"></i>
+          <i class="fas fa-random"></i>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/eeed889523.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
