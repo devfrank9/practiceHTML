@@ -1,0 +1,81 @@
+#friends-display-link {
+  text-align: center;
+  display: block;
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+#friends-display-link > i {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.user-component {
+  padding: 8px 0px;
+}
+
+.user-component__title {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.user-component__subtitle {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.friends-screen-main {
+  padding: 0px var(--horizontal-space);
+}
+
+.user-component__avatar--sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+}
+
+.user-component__title--not-bold {
+  font-weight: 500;
+}
+
+.friends-screen__channel {
+  margin-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding-top: 15px;
+}
+
+.friends-screen__channel-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.user-component__status-text {
+  border: 3px solid rgb(211, 191, 191, 0.3);
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.user-component__status-text span {
+  font-size: 12px;
+}
+
+.friends-screen__friends-scroll {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
+  height: 38vh;
+}
+
+.friends-screen__friends-scroll::-webkit-scrollbar {
+  height: 5px;
+}
+.friends-screen__friends-scroll::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+.friends-screen__friends-scroll::-webkit-scrollbar-track {
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.2);
+}
