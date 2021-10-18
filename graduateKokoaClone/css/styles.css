@@ -7,6 +7,9 @@
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
 @import "components/user-components.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
 
 /* screens */
 @import "screens/chats.css";
@@ -15,7 +18,8 @@
 @import "screens/friends.css";
 @import "screens/info.css";
 @import "screens/login.css";
-@import "screens/setting.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -23,7 +27,6 @@ body {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  height: 100vh;
 }
 
 @keyframes gradient {
@@ -36,4 +39,8 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }

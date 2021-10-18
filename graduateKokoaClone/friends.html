@@ -26,7 +26,9 @@
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
-        <span><i class="fas fa-cog fa-lg"></i></span>
+        <span
+          ><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a
+        ></span>
       </div>
     </header>
 
@@ -36,31 +38,31 @@
     </a>
 
     <main class="friends-screen-main">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20140625_51%2Fnardinger_1403659650345HzX7T_GIF%2F105.gif&type=sc960_832_gif"
-            class="user-component__avatar user-component__avatar--xl"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">한지우</h4>
-            <h6 class="user-component__subtitle">
-              세계 최고의 포켓몬 마스터가 되겠어
-            </h6>
+      <div class="friends-screen__friends-scroll">
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20140625_51%2Fnardinger_1403659650345HzX7T_GIF%2F105.gif&type=sc960_832_gif"
+              class="user-component__avatar user-component__avatar--xl"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title">한지우</h4>
+              <h6 class="user-component__subtitle">
+                세계 최고의 포켓몬 마스터가 되겠어
+              </h6>
+            </div>
           </div>
+          <div class="user-component__column"></div>
         </div>
-        <div class="user-component__column"></div>
-      </div>
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <i class="fas fa-chevron-right fa-xs"></i>
-        </div>
-        <div class="friends-screen__channel-header">
-          <span>Friends</span>
-          <i class="fas fa-chevron-up fa-xs"></i>
-        </div>
-        <div class="friends-screen__friends-scroll">
+        <div class="friends-screen__channel">
+          <div class="friends-screen__channel-header">
+            <span>Channel</span>
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </div>
+          <div class="friends-screen__channel-header">
+            <span>Friends</span>
+            <i class="fas fa-chevron-up fa-xs"></i>
+          </div>
           <div class="user-component">
             <div class="user-component__column">
               <img
@@ -211,6 +213,14 @@
         </li>
       </ul>
     </nav>
+
+    <div id="splash-screen">
+      <i class="fas fa-comment"></i>
+    </div>
+
+    <div id="no-mobile">
+      <span>Your screen is too big ㅠㅠ</span>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
